@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export", // <--- ESTO genera la carpeta /out
   images: {
     qualities: [75, 85],
     unoptimized: true, // ✅ evita el uso del optimizador interno
@@ -27,7 +28,6 @@ const nextConfig: NextConfig = {
   compress: true,
   trailingSlash: true,
   poweredByHeader: false,
-  output: "standalone",
   experimental: { typedRoutes: true },
 };
 
