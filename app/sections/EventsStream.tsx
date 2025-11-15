@@ -22,6 +22,7 @@ import {
   X,
 } from "lucide-react";
 
+import React from "react";
 // ======================================================
 // 🎪 EVENTS — EXPERIENCIA OPTIMIZADA UX/UI 2025
 // ======================================================
@@ -33,7 +34,7 @@ type EventItem = {
   dateLabel: string;
   desc: string;
   category: "Académico" | "Ciencia" | "Cultural";
-  icon: JSX.Element;
+  icon: React.ReactNode
   color: string;
 };
 
