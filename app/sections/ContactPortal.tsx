@@ -156,7 +156,7 @@ export default function ContactPortal() {
 }
 
 /* --- Subcomponentes --- */
-function InfoItem({ icon, title, text }: { icon: JSX.Element; title: string; text: string }) {
+function InfoItem({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
   return (
     <div className="flex items-start gap-4">
       {icon}
