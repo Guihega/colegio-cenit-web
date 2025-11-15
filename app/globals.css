@@ -1,6 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #ffffff;
+  --color-text: #1e293b;
+  --color-primary: #1e3a8a;
+  --color-accent: #facc15;
+  --color-secondary: #3b82f6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +24,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-[var(--color-bg)] text-[var(--color-text)] antialiased;
 }
 
 * {
@@ -40,3 +43,15 @@ a {
     color-scheme: dark;
   }
 }
+
+
+@keyframes gradientMove {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
