@@ -138,7 +138,7 @@ export default function ContactPortal() {
           >
             <div className="relative w-full h-full">
               <img
-                src="/img/mapa-tehuacan.png"
+                src="./img/mapa-tehuacan.png"
                 alt="Ubicación del Colegio Educativo Cenit en Tehuacán"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

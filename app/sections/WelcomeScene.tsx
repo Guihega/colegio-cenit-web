@@ -4,9 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { publicPath } from "@/app/lib/path";
 
 // ✅ Fondos precargados — Imágenes WebP comprimidas
-const backgrounds = ["/img/hero1.webp", "/img/hero2.webp", "/img/hero3.webp"];
+const backgrounds = [
+  publicPath("/img/hero1.webp"),
+  publicPath("/img/hero2.webp"),
+  publicPath("/img/hero3.webp"),
+];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);

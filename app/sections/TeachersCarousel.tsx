@@ -3,15 +3,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { BookA, Users, Brain, Palette } from "lucide-react";
+import { publicPath } from "@/app/lib/path";
 
 // 🧠 Datos institucionales
 const teachers = [
-  { name: "Mtra. Laura Mendoza", role: "Dirección General", img: "/img/docentes/docente1.webp", icon: Users },
-  { name: "Profa. Sofía Ortega", role: "Educación Inicial", img: "/img/docentes/docente2.webp", icon: BookA },
-  { name: "Profr. Luis Navarro", role: "Coordinación Académica", img: "/img/docentes/docente3.webp", icon: Brain },
-  { name: "Mtra. Daniela Torres", role: "Lenguaje y Comunicación", img: "/img/docentes/docente4.webp", icon: BookA },
-  { name: "Profr. Mateo Rivera", role: "Educación Física", img: "/img/docentes/docente5.webp", icon: Users },
-  { name: "Mtra. Camila Luna", role: "Arte y Creatividad", img: "/img/docentes/docente6.webp", icon: Palette },
+  { name: "Mtra. Laura Mendoza", role: "Dirección General", img: publicPath("/img/docentes/docente1.webp"), icon: Users },
+  { name: "Profa. Sofía Ortega", role: "Educación Inicial", img: publicPath("/img/docentes/docente2.webp"), icon: BookA },
+  { name: "Profr. Luis Navarro", role: "Coordinación Académica", img: publicPath("/img/docentes/docente3.webp"), icon: Brain },
+  { name: "Mtra. Daniela Torres", role: "Lenguaje y Comunicación", img: publicPath("/img/docentes/docente4.webp"), icon: BookA },
+  { name: "Profr. Mateo Rivera", role: "Educación Física", img: publicPath("/img/docentes/docente5.webp"), icon: Users },
+  { name: "Mtra. Camila Luna", role: "Arte y Creatividad", img: publicPath("/img/docentes/docente6.webp"), icon: Palette },
 ];
 
 // ✨ Variantes de animación
@@ -86,7 +87,7 @@ export default function Teachers() {
                     height={128}
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                     placeholder="blur"
-                    blurDataURL="/img/placeholder.webp"
+                    blurDataURL={publicPath("/img/placeholder.webp")}
                     loading="lazy"
                   />
                 </div>
